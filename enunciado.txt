@@ -1,0 +1,24 @@
+Você é um analista de banco de dados em uma instituição de ensino e foi requisitado para realizar a modelagem de um sistema de agendamento de horários para um salão de beleza. Para isso, é necessário criar um banco de dados PostgreSQL chamado "prova" e as seguintes entidades:
+Colaborador: nome, CPF e telefone.
+Cliente: nome, CPF e telefone.
+Horário de trabalho do colaborador: com dia da semana, horário de início e horário de término.
+Serviço: com nome e valor.
+Agenda: com data, horário, colaborador, cliente e serviço.
+
+Regras para o sistema:
+Cada colaborador deve ter uma carga horária de 8 horas e trabalhar somente em dias uteis.
+Os serviços têm um tempo de execução de 30 minutos cada.
+É necessário criar uma função para fazer o lançamento da agenda do mês dos colaboradores com horários a cada 30 minutos, a partir do dia da semana configurado no horário de trabalho, informando o mês de trabalho e o colaborador.
+É necessário criar uma rotina para importar um CSV com os serviços e feriado (servico.csv e feriado.csv).
+É necessário criar uma função para marcar o horário de um cliente para um colaborador, passando como parâmetro o colaborador, o cliente, o serviço e o horário, não permitindo mais de um agendamento para o mesmo horário do colaborador e cliente.
+É necessário criar uma view com os horários livres.
+É necessário criar uma view com os horários agendados, colaborador, serviço executado e o cliente.
+É necessário criar uma view com os colaboradores, com o total do dia por serviço.
+É necessário cadastrar no mínimo 3 colaboradores e fazer o lançamento de uma semana de atendimento e uma semana com atendimentos futuros. Deve-se garantir que as funções não permitam lançamentos que conflitem com o funcionário e a agenda dele.
+É necessário criptografar os dados pessoais
+É necessário validar a data do agendamento, verificando se é um feriado, e não permitir seu lançamento
+
+Regras gerais:
+
+Ao final, você deve entregar o modelo ER (XML) ou um print do ER e o(s) script(s) utilizados para resolução da prova, fazendo upload no diretório “resolucao” no 
+
